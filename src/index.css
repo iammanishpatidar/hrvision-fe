@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '@fibonacci-innovative-solutions/hrms-design-library/dist/hrms-design-library.css';
+@import 'tailwindcss';
+
+@theme {
+  --font-Poppins: 'Poppins', sans-serif;
+  --font-Nunito: 'Nunito', sans-serif;
+  --color-blueCyan: #8bcdde;
+  --color-primaryText: #7d8592;
+  --color-secondaryText: #030229;
+  --color-violetBlue: #605bff;
+  --color-sidePanel-heading: rgba(68, 66, 145, 0.8);
+  --image-auth-background: url('./../assets/BackgroundIcons.svg');
+  --color-background: #fcfeff;
+  --color-sidePanel-backgorund: rgba(138, 203, 221, 0.2);
+  --shadow-boxShadow: 0px 6px 58px 0px rgba(196, 203, 214, 0.1);
+  --shadow-cardShadow: 0px 6px 30px 0px rgba(10, 22, 41, 0.05);
+  --color-gradient-primary: linear-gradient(0deg, #4f4d98 0%, #4f4d98 100%);
+  --color-primary: #444291;
+  --color-gray-v1: #979797;
+  --color-gray-v2: #e9ebef;
+  --color-gray-v3: #91929e;
+  --color-gray-v4: #7d8592;
+  --color-gray-v5: #f4fafc;
+  --color-gray-v6: #cbcbcb;
+  --color-gray-v7: #636363;
+  --color-gray-v8: #98999dcc;
+  --color-gray-v9: #464646;
+  --color-gray-v10: #D8D8D8;
+  --color-gray-v11: #E9EBEF;
+  --color-gray-v12: #6F767E;
+  --color-custom-blue-v2: #f4f9fd;
+  --color-custom-blue: #8bcddef0;
+  --color-custom-black: #0a1629;
+  --color-blue-v1: #8acbdd;
+  --color-blue-v2: #2196f3;
+  --color-pink-v1: #f83995;
+  --color-pink-v2:#DF3386;
+  --color-blue-text:#7DB9C8;
+  --color-grey-text:#4A5567;
+  --color-green-v1:#5E8E3E;
+  --color-green-v2:#1BA019;
+  --color-yellow-v1:#FFA500;
+  --color-green-v1: #5e8e3e;
+  --color-green-v2: #1ba019;
+  --color-yellow-v1: #ffa500;
+
+  --color-danger-red: #bf3231;
+  --color-danger-red-v2: #E53935;
+
+  --background-custom-gradient: linear-gradient(
+    129deg,
+    #97e4eb -0.09%,
+    rgba(47, 45, 133, 0.9) 91.34%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(0deg, #4f4d98 0%, #4f4d98 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-gradient-primary {
+  background: var(--color-gradient-primary);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.gradient-background {
+  background: linear-gradient(129deg, #97e4eb -0.09%, rgba(47, 45, 133, 0.9) 91.34%);
+}
+
+.font-poppins {
+  font-family: var(--font-Poppins);
+}
+
+.font-nunito {
+  font-family: var(--font-Nunito);
+}
+
+.h-input-default {
+  height: 50px;
+}
+
+.w-input-default {
+  width: 100%;
+}
+
+.input-default {
+  color: var(--color-primaryText);
+  font-family: var(--font-Poppins);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Main scrollbar styling */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+/* Track styling */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle (thumb) styling */
+::-webkit-scrollbar-thumb {
+  background: #444291;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444291;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #444291 #f1f1f1;
+}
+
+/* For Edge and other browsers that support standard scrollbar-color */
+body {
+  scrollbar-color: #9a7b35 #f1f1f1;
+  scrollbar-width: thin;
+}
+
+/* For Internet Explorer */
+body {
+  scrollbar-face-color: #9a7b35;
+  scrollbar-track-color: #f1f1f1;
+  scrollbar-arrow-color: #9a7b35;
+  scrollbar-shadow-color: #9a7b35;
+}
+
+.border-blue-custom {
+  border: 1px solid var(--color-custom-blue);
+}
+.border-gray-custom {
+  border: 1px solid var(--color-gray-v6);
+}
+.border-gray-custom-v2 {
+  border: 1px solid var(--color-gray-v8);
+}
